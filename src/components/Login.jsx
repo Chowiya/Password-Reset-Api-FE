@@ -14,7 +14,7 @@ function Login() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('https://password-reset-api-be.onrender.com/auth/login', formData);
+      const response = await axios.post('http://localhost:5002/auth/login', formData);
       setMessage(response.data.message);
       localStorage.setItem('token', response.data.token);
       navigate('/profile'); // Redirect to profile after login

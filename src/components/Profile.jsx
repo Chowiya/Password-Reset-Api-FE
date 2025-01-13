@@ -8,7 +8,7 @@ function Profile() {
     const fetchProfile = async () => {
       try {
         const token = localStorage.getItem('token');
-        const response = await axios.get('https://password-reset-api-be.onrender.com/auth/profile', {
+        const response = await axios.get('http://localhost:5002/auth/profile', {
           headers: { Authorization: `Bearer ${token}` },
         });
         setUser(response.data.user);
