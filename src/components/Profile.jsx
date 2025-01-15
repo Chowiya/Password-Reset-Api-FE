@@ -20,7 +20,7 @@ function Profile() {
   }, []);
 
   return (
-    <div className='flex  justify-between min-h-screen px-6 sm:px-0 bg-gradient-to-br from-blue-200 to-purple-400'>
+    <div className='min-h-screen px-6 sm:px-0 bg-gradient-to-br from-blue-200 to-purple-400'>
        <h2>{user ? (
         <div>
           <p className='text-4xl font-mono mt-6 ml-36'>HEY 👋  <span className='text-pink-400 font-extrabold'>{user.name} </span></p>
