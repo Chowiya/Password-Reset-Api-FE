@@ -8,7 +8,7 @@ function ResetPassword() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:5002/auth/reset-password', { email });
+      const response = await axios.post(`${import.meta.env.VITE_API_URL}/auth/reset-password`, { email });
       setMessage(response.data.message);
     } catch (error) {
       setMessage(error.response?.data?.message || 'Something went wrong');
