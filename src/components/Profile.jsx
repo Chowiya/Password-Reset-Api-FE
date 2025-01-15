@@ -23,7 +23,7 @@ function Profile() {
     <div className='min-h-screen px-6 sm:px-0 bg-gradient-to-br from-blue-200 to-purple-400'>
        <h2>{user ? (
         <div>
-          <p className='text-4xl font-mono mt-6 ml-36'>HEY 👋  <span className='text-pink-400 font-extrabold'>{user.name} </span></p>
+          <p className='text-4xl font-mono mt-6'>HEY 👋  <span className='text-pink-400 font-extrabold'>{user.name} </span></p>
             
              <p className='font-mono ml-36'>WELCOME TO PROFILE PAGE </p> 
              <p className='font-mono ml-36'>HERE YOU CAN EDIT YOUR PROFILE</p>
